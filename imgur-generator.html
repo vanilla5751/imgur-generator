@@ -13,7 +13,7 @@
 	//assign a value of 5 characters to x
 	// Generate a random letter from A to Z
 function randomLetter() {
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+  let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
   let index = Math.floor(Math.random() * alphabet.length);
   return alphabet[index];
 }
@@ -35,39 +35,12 @@ let x = randomString(5);
 	</script>
 <script>
 	//define the function to change link
-	function myFunction2() {
-
-	//assign a value of 5 characters to x
-	// Generate a random letter from A to Z
-function randomLetter() {
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-  let index = Math.floor(Math.random() * alphabet.length);
-  return alphabet[index];
-}
-
-// Generate a string of 6 random letters
-function randomString(length) {
-  let result = "";
-  for (let i = 0; i < length; i++) {
-    result += randomLetter();
-  }
-  return result;
-}
-
-// Assign the random string to variable x
-let x = randomString(6);
-	
-	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
-	}
-	</script>
-<script>
-	//define the function to change link
 	function myFunction3() {
 
 	//assign a value of 5 characters to x
 	// Generate a random letter from A to Z
 function randomLetter() {
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+  let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
   let index = Math.floor(Math.random() * alphabet.length);
   return alphabet[index];
 }
@@ -89,7 +62,6 @@ let x = randomString(7);
 	</script>
 	<embed id="link" type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
 <button type="button" onclick="myFunction()">5letter-link</button>
-<button type="button" onclick="myFunction2()">6letter-link</button>
 <button type="button" onclick="myFunction3()">7letter-link</button>
 	
 </body>
