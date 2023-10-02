@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><br>
+<title>kool kids klub</title>
+</head>
+<body><br>
+<script>
+	//define the variable
+	var x
+	//define the function to change link
+	function myFunction() {
+
+	//assign a value of 5 characters to x
+	// Generate a random letter from A to Z
+function randomLetter() {
+  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+  let index = Math.floor(Math.random() * alphabet.length);
+  return alphabet[index];
+}
+
+// Generate a string of 5 random letters
+function randomString(length) {
+  let result = "";
+  for (let i = 0; i < length; i++) {
+    result += randomLetter();
+  }
+  return result;
+}
+
+// Assign the random string to variable x
+let x = randomString(5);
+	
+	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
+	}
+	</script>
+	<embed id="link" type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+<button type="button" onclick="myFunction()">regenerate</button>
+	
+</body>
+</html>
