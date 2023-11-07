@@ -6,6 +6,7 @@
 <body><br>
 <script>
 	//define the variable
+	var n
 	var x
 	//define the function to change link
 	function myFunction() {
@@ -29,9 +30,9 @@ function randomString(length) {
 
 // Assign the random string to variable x
 let x = randomString(5);
-	
+let n = n+1
 	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
-	document.getElementById("code").innerHTML = "the image code is" + " " + x;
+	document.getElementById("code").innerHTML += <br> "the image code is" + " " + x + "(" + n + ")";
 	}
 	</script>
 <script>
@@ -57,9 +58,9 @@ function randomString(length) {
 
 // Assign the random string to variable x
 let x = randomString(7);
-	
+let n = n+1
 	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
-	document.getElementById("code").innerHTML = "the image code is" + " " + x;
+	document.getElementById("code").innerHTML += <br> "the image code is" + " " + x + "(" + n + ")";
 	}
 	</script>
 	<embed id="link" type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
