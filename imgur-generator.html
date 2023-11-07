@@ -59,6 +59,7 @@ function randomString(length) {
 let x = randomString(7);
 	
 	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
+	document.getElementById("code").innerHTML = "the image code is" + " " + x;
 	}
 	</script>
 	<embed id="link" type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
