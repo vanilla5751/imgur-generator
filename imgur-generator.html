@@ -7,9 +7,10 @@
 <script>
 	//define the variable
 	var x
+	var u = 1
 	//define the function to change link
-	function myFunction() {
-
+	function letter5() {
+for(let i = 1; i < 13; i++){
 	//assign a value of 5 characters to x
 	// Generate a random letter from A to Z
 function randomLetter() {
@@ -30,14 +31,21 @@ function randomString(length) {
 // Assign the random string to variable x
 let x = randomString(5);
 	
-	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
-	document.getElementById("code").innerHTML += "<br>" + "the image code is" + " " + x;
+		if ("https://i.imgur.com/" + x + ".jpeg" == "https://i.imgur.com/removed.png")
+			{}else{
+	document.getElementById("link" + i).setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
+	document.getElementById("code").innerHTML += "<br>" + u + " " + "the image code is" + " " + x;
+				
+				
+	}
+	u = u+1
+	}
 	}
 	</script>
 <script>
 	//define the function to change link
-	function myFunction3() {
-
+	function letter7() {
+for(let i = 1; i < 13; i++){
 	//assign a value of 5 characters to x
 	// Generate a random letter from A to Z
 function randomLetter() {
@@ -46,7 +54,7 @@ function randomLetter() {
   return alphabet[index];
 }
 
-// Generate a string of 7 random letters
+// Generate a string of 5 random letters
 function randomString(length) {
   let result = "";
   for (let i = 0; i < length; i++) {
@@ -58,16 +66,34 @@ function randomString(length) {
 // Assign the random string to variable x
 let x = randomString(7);
 	
-	document.getElementById("link").setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
-	document.getElementById("code").innerHTML += "<br>" + "the image code is" + " " + x;
+		if ("https://i.imgur.com/" + x + ".jpeg" == "https://i.imgur.com/removed.png")
+			{}else{
+	document.getElementById("link" + i).setAttribute("src", "https://i.imgur.com/" + x + ".jpeg");
+	document.getElementById("code").innerHTML += "<br>" + u + " " + "the image code is" + " " + x;
+	}
+	u = u+1
+	}
 	}
 	</script>
-	<embed id="link" type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+	<h><b>VANILLAS IMGUR GENERATOR</b></h>
+	<p>warning* this can generate things that are nsfw</p>
+	<embed id="link1" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link2" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link3" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link4" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link5" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link6" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link7" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link8" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link9" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link10" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link11" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
+	<embed id="link12" type="image/jpg" src="https://i.imgur.com/XLc6Ly8.jpeg" width="300" height="200">
 	
-<button type="button" onclick="myFunction()">5letter-link</button>
-<button type="button" onclick="myFunction3()">7letter-link</button>
+<br><button type="button" onclick="letter5()">5letter-link</button>
+<button type="button" onclick="letter7()">7letter-link</button>
 	<br>
 	<br>
-	<p id="code"> sd </p>
+	<p id="code">  </p>
 </body>
 </html>
